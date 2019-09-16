@@ -31,6 +31,28 @@ function sectionThreeDoubleHover() {
   }
 }
 
+// stripes
+var stripes = document.getElementsByClassName('stripes');
+function stripesFun() {
+  stripes[0].style.transform = 'scale(1,1)';
+}
+
+//wrinclesSpan
+var wrinclesSpan = document.getElementsByClassName('wrinclesSpan');
+
+function wrinclesSpanfun() {
+  setTimeout(function () {
+    wrinclesSpan[0].style.transform = 'rotateX(0deg)'
+  }, 500);
+}
+
+// uSpan
+var uSpan = document.getElementsByClassName('uSpan');
+function uSpanfun() {
+setTimeout(function () {
+  uSpan[0].style.color = '#b9a0e6';
+}, 500);
+}
 
 // window listener
 window.addEventListener('scroll',()=>{
@@ -38,3 +60,9 @@ window.addEventListener('scroll',()=>{
   sectionTwoDoubleHover();
   sectionThreeDoubleHover();
 })
+
+window.addEventListener('load',()=>{
+  stripesFun();
+  wrinclesSpanfun();
+  uSpanfun();
+});

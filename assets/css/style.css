@@ -55,11 +55,14 @@ header{
 .stripeBox{
   /* border: 1px solid blue; */
   position: relative;
+  overflow: hidden;
 }
 .stripes{
+  transition: 2s;
   width: 3.6319vw;
   opacity: 0.4;
   position: relative;
+  transform: scale(1,3);
   left: 2vw;
 }
 
@@ -124,7 +127,8 @@ header{
 }
 
 .leftContentHeader h1 span{
-  color: #b9a0e6;
+  transition: all 2s ease;
+  color: #f1c3cb;
 }
 
 .leftContentHeader h3{
@@ -252,6 +256,7 @@ nav a{
 }
 
 .wrincleFree{
+  perspective: 50vw;
  position: absolute;
  right: 2vw;
  font-size: 2.84174vw;
@@ -260,6 +265,14 @@ nav a{
  line-height: 1;
  font-family: 'Cormorant-Regular';
  margin: 0;
+}
+
+.wrinclesSpan{
+  position: absolute;
+  transform: rotateX(-89.5deg);
+  transform-origin: top;
+  transition: all 1s ease-in;
+  white-space: nowrap;
 }
 
 .theMost{
