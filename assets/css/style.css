@@ -619,6 +619,10 @@ footer img{
   border:1px solid #d16381;
 }
 
+.arrowToTop:hover{
+  opacity: 1 !important;
+}
+
 .arrowToTop p{
   margin: 0 !important;
   font-size: 2vw;
