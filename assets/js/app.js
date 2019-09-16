@@ -29,7 +29,7 @@ function sectionThreeDoubleHover() {
   if(sectionThree[0].getBoundingClientRect().top - window.innerHeight /3 <= 0 ){
     sectionThree[0].style.background = '#f5f6f7'
   }else{
-    sectionThree[0].style.background = '#bfafa4'
+    sectionThree[0].style.background = '#ae9572'
   }
 }
 
