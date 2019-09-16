@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: 'Cormorant-Regular';
+  src: url('../fonts/Cormorant-Regular.otf');
+}
+
+@font-face {
   font-family: 'Trajan-Pro-Bold';
   src: url('../fonts/Trajan-Pro-Bold.ttf');
 }
@@ -28,7 +33,7 @@ header{
   display: flex;
   justify-content: center;
 }
-.headerSocMed{position: absolute;bottom: 17vw;right: 15vw;}
+.headerSocMed{position: absolute;bottom: 20.5vw;right: 17vw;}
 .headerContainer{
   position: relative;
   /* border: 1px solid red; */
@@ -44,7 +49,7 @@ header{
   opacity: 0.995;
   background: #c47aa3;
   height: 83.14vw;
-  width: 26.8988vw;
+  width: 27.47572vw;
 }
 
 .stripeBox{
@@ -101,7 +106,7 @@ header{
 
 .freeShipingBox p{
   font-family: 'Trajan-Pro-Regular';
-  font-size: 0.87167vw;
+  font-size: 0.82vw;
   color: #555555;
 }
 
@@ -122,22 +127,39 @@ header{
   color: #b9a0e6;
 }
 
+.leftContentHeader h3{
+  position: absolute;
+  font-family: 'Trajan-Pro-Regular';
+  font-size: 1.165vw;
+  color: #efc2c9;
+  top: 34.6vw;
+  left: 14.1vw;
+}
+
 .prodHeader{
   position: absolute;
-  left: -6vw;
+  left: -6.6vw;
   top: 34vw;
   width: 53.995vw;
 }
 
 /* nav  start*/
 nav{
-  padding-top: 1.1vw;
-  padding-left: 50.7vw;
+  /* padding-top: 1.1vw; */
+  padding-left: 71vw;
   display: flex;
   /* border: 1px solid red; */
   position: absolute;
   align-items: center;
   color: #555555;
+}
+
+.navInsideContainer{
+  display: flex;
+  padding-top: 1.1vw;
+  padding-right: 1.55vw;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
 }
 
 nav a{
@@ -151,7 +173,7 @@ nav a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 6.7vw;
+  margin-left: 0vw;
   position: relative;
   top: -0.8vw;
 }
@@ -170,7 +192,7 @@ nav a{
   font-family: 'Trajan-Pro-Regular';
   font-size: 0.87082vw;
   margin-left: 0.45vw;
-  font-weight: 800;
+  /* font-weight: 800; */
 }
 
 .checkout:hover{
@@ -182,7 +204,7 @@ nav a{
   font-family: 'Trajan-Pro-Regular';
   font-size: 0.87082vw;
   margin-left: 0.45vw;
-  font-weight: 800;
+  /* font-weight: 800; */
 }
 
 .myAcc:hover{
@@ -191,8 +213,8 @@ nav a{
 }
 .number{
   font-family: 'Trajan-Pro-Regular';
-  font-size: 0.99167vw;
-  margin-left: 2.31vw;
+  font-size: 0.9vw;
+  margin-left: 3.31vw;
   text-decoration: none;
 }
 
@@ -205,13 +227,15 @@ nav a{
 }
 .userIcon{
   width: 1.1094vw;
-  margin-left: 2.7vw;
+  margin-left: 1.7vw;
   position: relative;
   top: -0.3vw;
 }
 .flagImg{
-  width: 2.1543vw;
+  width: 2vw;
   margin-left: 0.4vw;
+  position: relative;
+  top: 0.08vw;
 }
 /* nav end */
 
@@ -267,13 +291,14 @@ nav a{
 .effectiveContainer h3{
   position: absolute;
   font-family: 'steelfish_rg';
-  font-size: 8.23244vw;
-  color: #ffcd7e;
+  font-size: 6.78155vw;
+  color: #ffd172;
   font-weight: 100;
-  left: 11.5vw;
+  left: 11.1vw;
   top: 15.8vw;
-  text-shadow: 0.484261vw 0.484261vw 0px rgba(0,0,0,0.11);
+  text-shadow: 0.284261vw 0.284261vw 0px rgba(0,0,0,0.11);
   margin: 0;
+  white-space: nowrap;
 }
 
 /* sectionTwo start */
@@ -284,13 +309,14 @@ nav a{
 .secTwoBg{
   position: relative;
   width: 100%;
+  /* height: 80%; */
 }
 
 .secTwoProd{
-  width: 100%;
+  width: 40.533vw;
   position: absolute;
-  left: 0;
-  top: 5.34624vw;
+  left: 32.25vw;
+  top: 13.34624vw;
 }
 .buyNowBox{
   position: absolute;
@@ -301,10 +327,11 @@ nav a{
   justify-content: center;
 }
 .buyNow{
+  transition: all 0.6s ease;
   position: absolute;
   font-size: 1.5vw;
   font-family: 'Trajan-Pro-Regular';
-  bottom: 2.4vw;
+  bottom: 13.4vw;
   height: 3.37vw;
   width: 17vw;
   border-top: 2px solid #c38000;
@@ -313,19 +340,12 @@ nav a{
   border-left: 1px solid #c38000;
   border-right: 1px solid #c38000;
   color: #c38000;
+  filter: brightness(1);
 }
-/* sectionTwo end */
-
-
-/* sectionThree start */
-.sectionThree{
-  position: relative;
-  background: #e8f0d6;
-  padding: 1px;
-  display: flex;
-  justify-content: center;
+.buyNow:hover{
+  cursor: pointer;
+  filter: brightness(1.2);
 }
-
 .secTwoOverlay{
   transition: all 2s ease;
   position: absolute;
@@ -335,11 +355,60 @@ nav a{
   background: #b76083;
   height: 100%;
 }
+/* sectionTwo end */
+
+
+/* sectionThree start */
+.sectionThree{
+  transition: all 1s ease;
+  position: relative;
+  margin-top: -0.3vw;
+  background: #f5f6f7;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.secThreeText{
+  width: 100%;
+  position: absolute;
+  bottom: 3vw;
+  left: 0;
+  font-weight: 100;
+  text-align: center;
+  font-family: 'Cormorant-Regular';
+  color: #3a3d41;
+}
+
+.secThreeText p{
+  font-size: 1.9417vw;
+  margin: 0;
+  margin-bottom: 0.76vw;
+}
+
+.secThreeText h2{
+  margin: 0;
+  font-size: 4.36893vw;
+  font-weight: 100;
+}
+
+.secThreeText h2 span{
+  color: #d6965c;
+}
+
+.secThreeText h3{
+  font-size: 1.74757vw;
+  margin: 0;
+  margin-top: -0.7vw;
+  font-weight: 100;
+}
+
 
 .secThreeProd{
   position: relative;
   margin-bottom: 3vw;
   margin-top: 7vw;
+  top: 5vw;
 }
 /* sectionThree end */
 
@@ -350,6 +419,14 @@ nav a{
 .secFourBg{
   position: relative;
   width: 100%;
+}
+.sectionFourOverlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(190,110,142,0.85);
 }
 /* add box */
 .advertBox{
@@ -366,7 +443,7 @@ nav a{
   background: linear-gradient(to right, rgba(242,182,140,1) 0%, rgba(250,214,166,1) 100%);
 }
 .blackDivOne{
-  background-color: black;
+  background-color: #3a3d41;
   position: absolute;
   top: 0;
   right: -14.5vw;
@@ -375,7 +452,7 @@ nav a{
   transform: rotate(45deg);
 }
 .blackDivTwo{
-  background-color: black;
+  background-color: #3a3d41;
   position: absolute;
   bottom: 0;
   right: -14.5vw;
@@ -411,7 +488,7 @@ nav a{
   font-size: 2.1vw;
   position: relative;
   font-family: 'Trajan-Pro-Regular';
-  color: black;
+  color: #3a3d41;
 }
 .advertBoxButton{
   position: absolute;
@@ -455,6 +532,7 @@ nav a{
   left:0.2vw;
   font-size: 2vw;
   font-weight: 800;
+  color: #3a3d41;
 }
 .littleArroHtml:hover{
   color: rgb(210,200,197);
@@ -479,10 +557,12 @@ footer{
   position: relative;
   display: flex;
   justify-content: center;
-  background: black;
+  background: #d7dadc;
   margin-top: -0.25vw;
   padding-top: 6.4vw;
   padding-bottom: 2.1vw;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer img{
@@ -502,12 +582,15 @@ footer img{
 }
 
 .arrowToTop{
-  position: absolute;
+  opacity: 0;
+  transition: all 0.75s ease;
+  position: fixed;
   width: 2.89vw;
   height: 2.89vw;
-  background: #fde7de;
-  right: 2vw;
-  top: 2vw;
+  background: #e8f0d6;
+  right: 3vw;
+  /* top: 2vw; */
+  bottom: 4vw;
   transform: rotate(-90deg);
   display: flex;
   align-items: center;
@@ -526,7 +609,7 @@ footer img{
 .foterSocialMedia{
   color: white;
   display: flex;
-  width: 6vw;
+  width: 8.6vw;
 }
 
 .foterSocialMedia .fab{
@@ -549,4 +632,17 @@ footer img{
 .foterSocialMedia a{
   text-decoration: none;
   color: white;
+}
+
+.footerText{
+  position: relative;
+}
+
+.footerText h3{
+  color: #d6965c;
+  font-size: 0.8737vw;
+}
+
+.footerText p{
+  font-size: 0.8737vw;
 }
