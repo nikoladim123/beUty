@@ -2,7 +2,7 @@
 var arrowToTop = document.getElementsByClassName('arrowToTop');
 function arrowToTopFun() {
   if(sectionTwo[0].getBoundingClientRect().top - window.innerHeight /1.2 <= 0 ){
-    arrowToTop[0].style.opacity = '1'
+    arrowToTop[0].style.opacity = '0.31'
   }else{
     arrowToTop[0].style.opacity = '0'
   }
