@@ -600,6 +600,7 @@ footer img{
   bottom: 4vw;
   transform: rotate(-90deg);
   display: flex;
+  opacity: 0.3;
   align-items: center;
   justify-content: center;
   border:1px solid #d16381;
@@ -646,7 +647,7 @@ footer img{
 }
 
 .footerText h3{
-  color: #d6965c;
+  /* color: #d6965c; */
   font-size: 0.8737vw;
 }
 
