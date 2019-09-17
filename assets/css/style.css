@@ -444,10 +444,11 @@ nav a{
 
 
 .secThreeProd{
+  /* transition: 0.1s; */
   position: relative;
   margin-bottom: 5vw;
   margin-top: 7vw;
-  top: 4vw;
+  top: -1vw;
   width: 26.79611vw;
 }
 /* sectionThree end */

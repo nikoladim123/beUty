@@ -9,17 +9,28 @@ function arrowToTopFun() {
     arrowToTop[0].style.pointerEvents = 'none'
   }
 }
+// paralax one
+var secTwoProd = document.getElementsByClassName('secTwoProd')[0];
+function paralax() {
+  secTwoProd.style.top = window.scrollY/4 - sectionTwo[0].getBoundingClientRect().height/7 + "px";
+}
+
+// paralax two
+var secThreeProd = document.getElementsByClassName('secThreeProd');
+var sectionThree = document.getElementsByClassName('sectionThree');
+
+var topPos = 0;
+function paralaxTwo() {
+  // if (sectionThree[0].getBoundingClientRect().top < window.innerHeight /100 *20) {
+    secThreeProd[0].style.top = -topPos + 'vw';
+    topPos = sectionThree[0].getBoundingClientRect().top /100;
+  // }
+}
 
 // double hover
 var sectionTwo = document.getElementsByClassName('sectionTwo');
 var secTwoOverlay = document.getElementsByClassName('secTwoOverlay');
-var secTwoProd = document.getElementsByClassName('secTwoProd')[0];
-      window.onscroll = function(){
-        secTwoProd.style.top = '-' + window.scrollY/2 + "px";
-      }
-function paralax() {
-  secTwoProd.style.top = window.scrollY/4 - sectionTwo[0].getBoundingClientRect().height/7 + "px";
-}
+
 
 function sectionTwoDoubleHover() {
   if(sectionTwo[0].getBoundingClientRect().top - window.innerHeight /3 <= 0 ){
@@ -105,6 +116,7 @@ window.addEventListener('scroll',()=>{
   sectionThreeDoubleHover();
   runSpecialOffer();
   paralax();
+  paralaxTwo()
 })
 
 window.addEventListener('load',()=>{
