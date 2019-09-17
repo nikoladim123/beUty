@@ -9,6 +9,20 @@ function arrowToTopFun() {
     arrowToTop[0].style.pointerEvents = 'none'
   }
 }
+
+// skinCare text
+var skinCare = document.getElementsByClassName('skinCare');
+function skinCarefun() {
+  skinCare[0].style.top = '4.2vw';
+}
+
+
+// nav show
+var navInsideContainer = document.getElementsByClassName('navInsideContainer');
+function navInsideContainerFun() {
+  navInsideContainer[0].style.left = '0'
+}
+
 // paralax one
 var secTwoProd = document.getElementsByClassName('secTwoProd')[0];
 function paralax() {
@@ -116,11 +130,13 @@ window.addEventListener('scroll',()=>{
   sectionThreeDoubleHover();
   runSpecialOffer();
   paralax();
-  paralaxTwo()
+  paralaxTwo();
 })
 
 window.addEventListener('load',()=>{
   stripesFun();
   wrinclesSpanfun();
   uSpanfun();
+  navInsideContainerFun();
+  skinCarefun();
 });
