@@ -22,8 +22,8 @@ var sectionThree = document.getElementsByClassName('sectionThree');
 var topPos = 0;
 function paralaxTwo() {
   // if (sectionThree[0].getBoundingClientRect().top < window.innerHeight /100 *20) {
-    secThreeProd[0].style.top = -topPos + 'vw';
-    topPos = sectionThree[0].getBoundingClientRect().top /100;
+    secThreeProd[0].style.top = -topPos+1 + 'vw';
+    topPos = sectionThree[0].getBoundingClientRect().top /80;
   // }
 }
 
