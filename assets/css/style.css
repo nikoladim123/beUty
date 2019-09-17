@@ -50,6 +50,7 @@ header{
   background: #c47aa3;
   height: 83.14vw;
   width: 27.47572vw;
+  /* width: 0; */
 }
 
 .stripeBox{
@@ -245,26 +246,66 @@ nav a{
 
 
 .effectiveContainer{
+  overflow: hidden;
+  transition: 1s;
   position: absolute;
   top: 48.65vw;
   right: 9.42vw;
   background: rgba(255,255,255,0.53);
   border:1px solid #f0c9cd;
   outline: 0.9685vw solid rgba(255,255,255,0.53);
-  width: 35.6416vw;
+  /* width: 35.6416vw; */
+  width: 0vw;
   height: 18.547vw;
+}
+.specialOfferContainer{
+  transition: 0.5s;
+  /* border: 1px solid red; */
+  position: absolute;
+  overflow: hidden;
+  top: 19.5vw;
+  left: 11vw;
+  width: 25vw;
+  height: 9vw;
+}
+
+.specialOffer{
+  transition: 0.5s;
+  position: absolute;
+  font-family: 'steelfish_rg';
+  /* overflow: hidden; */
+  font-size: 6.78155vw;
+  color: #ffd172;
+  font-weight: 100;
+  left: 0;
+  top: -8vw;
+  /* text-shadow: 0.284261vw 0.284261vw 0px rgba(0,0,0,0.11); */
+  text-shadow: 0vw 0vw 0px rgba(0,0,0,0.11);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.effectiveContainer h2{
+  color: #898a90;
+  font-size: 12.1549vw;
+  font-family: 'steelfish_rg';
+  position: absolute;
+  font-weight: 100;
+  margin: 0;
+  top: 1.2vw;
+  left: 3.8vw;
 }
 
 .wrincleFree{
   perspective: 50vw;
- position: absolute;
- right: 2vw;
- font-size: 2.84174vw;
- top: -10.7vw;
- color: #9e5f7e;
- line-height: 1;
- font-family: 'Cormorant-Regular';
- margin: 0;
+  position: absolute;
+  right: 11vw;
+  font-size: 2.84174vw;
+  top: 37.3vw;
+  color: #9e5f7e;
+  line-height: 1;
+  font-family: 'Cormorant-Regular';
+  margin: 0;
 }
 
 .wrinclesSpan{
@@ -286,16 +327,6 @@ nav a{
   left: 2.2vw;
 }
 
-.effectiveContainer h2{
-  color: #898a90;
-  font-size: 12.1549vw;
-  font-family: 'steelfish_rg';
-  position: absolute;
-  font-weight: 100;
-  margin: 0;
-  top: 1.2vw;
-  left: 3.8vw;
-}
 
 .nightCream{
   font-size: 1.45vw;
@@ -305,20 +336,9 @@ nav a{
   top: 14vw;
   position: absolute;
   left: 17.7vw;
-}
-
-.effectiveContainer h3{
-  position: absolute;
-  font-family: 'steelfish_rg';
-  font-size: 6.78155vw;
-  color: #ffd172;
-  font-weight: 100;
-  left: 11.1vw;
-  top: 15.8vw;
-  text-shadow: 0.284261vw 0.284261vw 0px rgba(0,0,0,0.11);
-  margin: 0;
   white-space: nowrap;
 }
+
 
 /* sectionTwo start */
 .sectionTwo{
@@ -335,7 +355,7 @@ nav a{
   width: 40.533vw;
   position: absolute;
   left: 32.25vw;
-  top: 13.34624vw;
+  top: 0vw;
 }
 .buyNowBox{
   position: absolute;

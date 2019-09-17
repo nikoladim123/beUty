@@ -13,10 +13,18 @@ function arrowToTopFun() {
 // double hover
 var sectionTwo = document.getElementsByClassName('sectionTwo');
 var secTwoOverlay = document.getElementsByClassName('secTwoOverlay');
+var secTwoProd = document.getElementsByClassName('secTwoProd')[0];
+      window.onscroll = function(){
+        secTwoProd.style.top = '-' + window.scrollY/2 + "px";
+      }
+function paralax() {
+  secTwoProd.style.top = window.scrollY/4 - sectionTwo[0].getBoundingClientRect().height/7 + "px";
+}
 
 function sectionTwoDoubleHover() {
   if(sectionTwo[0].getBoundingClientRect().top - window.innerHeight /3 <= 0 ){
     secTwoOverlay[0].style.opacity = '0'
+
   }else{
     secTwoOverlay[0].style.opacity = '1'
   }
@@ -51,16 +59,52 @@ function wrinclesSpanfun() {
 // uSpan
 var uSpan = document.getElementsByClassName('uSpan');
 function uSpanfun() {
-setTimeout(function () {
-  uSpan[0].style.color = '#b9a0e6';
-}, 500);
+  setTimeout(function () {
+    uSpan[0].style.color = '#b9a0e6';
+  }, 500);
 }
+
+
+// textBoxHeader
+var effectiveContainer = document.getElementsByClassName('effectiveContainer');
+var specialOffer = document.getElementsByClassName('specialOffer');
+var specialOfferContainer = document.getElementsByClassName('specialOfferContainer');
+
+
+
+function specialOfferFun() {
+  effectiveContainer[0].style.width = '35.6416vw';
+  setTimeout(function () {
+    effectiveContainer[0].style.overflow = 'visible';
+    specialOffer[0].style.top = '-1vw';
+    setTimeout(function () {
+      specialOffer[0].style.textShadow = '0.284261vw 0.284261vw 0px rgba(0,0,0,0.11)';
+      specialOffer[0].style.top = '-1.54261vw';
+      specialOffer[0].style.left = '-0.284261vw';
+      setTimeout(function () {
+        specialOfferContainer[0].style.top = '16.5vw';
+        specialOfferContainer[0].style.left = '11.5vw';
+      }, 300);
+    }, 400);
+  }, 1000);
+};
+
+var textTriger = 0;
+function runSpecialOffer() {
+  if(effectiveContainer[0].getBoundingClientRect().top - window.innerHeight /1.7 <= 0 && textTriger !== 1){
+    textTriger =1;
+    specialOfferFun()
+  }
+}
+
 
 // window listener
 window.addEventListener('scroll',()=>{
   arrowToTopFun();
   sectionTwoDoubleHover();
   sectionThreeDoubleHover();
+  runSpecialOffer();
+  paralax();
 })
 
 window.addEventListener('load',()=>{
